@@ -720,6 +720,70 @@ footer a.logo{
     line-height: 22px;
     letter-spacing: -0.43px;
 }
+.house__information{
+    background-color: #f2f2f2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.house__information .house__description, .features__info .features__descr {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 23px;
+  
+
+}
+
+.house__information .house__description div, .features__info .features__descr .features-types{
+    background: linear-gradient(#F5F5F5, #E4E4E4);
+}
+.house__information .house__description div h2, .features__info .features__descr .features-types h2{ 
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 25px 25px 0 0;
+
+}
+
+.house__information .house__description div .text__description{   /*цвет фона меняется из-за прозрачности, пробовала обернуть все в новый div, но  не помогло*/
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.38px;
+    opacity: 0.6;
+    padding: 35px 30px 0px 30px;
+    background-color: white;
+}
+.house__information .house__description div .text__description:last-child{
+    padding-bottom: 30px;
+    border-radius: 0 0 25px 25px;
+}
+.features__info{
+    background-color: #f2f2f2;
+    padding-bottom: 150px;
+}
+
+
+.features__info .features__descr .features-types .types-descr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 30px;
+    grid-row-gap: 20px;
+    grid-column-gap: 124px;
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+}
+.features__info .features__descr .features-types .types-descr span{
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.38px;
+    opacity: 0.6;
+}
 
 
 
@@ -860,6 +924,12 @@ footer a.logo{
     .details__section .details{
         grid-template-columns: 1fr;
     }
+    .house__information .house__description{
+        grid-template-columns: 1fr;
+    }
+    .features__info .features__descr{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -935,6 +1005,9 @@ footer a.logo{
     .feedback__discription .feedback__name .name{
         padding-top: 20px;
     }
+    .features__info .features__descr .features-types .types-descr{
+        grid-column-gap: 12%;
+    }
 
     
 }
@@ -995,6 +1068,11 @@ footer a.logo{
     }
     .details__section .details .details-title .details-icon span{
         margin-left: 2px;
+    }
+    .features__info .features__descr .features-types .types-descr{ /* оставила две колонки, так как даже на маленьком экране для меня норм))*/
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
 
 }
 @media screen and (max-width: 425px){
