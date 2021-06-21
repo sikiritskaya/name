@@ -155,9 +155,10 @@ header .menu li:last-child a img{
     margin-left: 19px;
 }
 .section__filter{
-    height: 1874px;
+   /* height: 1874px; */
     background-color: #f5f5f5;
     padding-top: 216px;
+    padding-bottom: 393px;
 }
 .section__filter-choice hr{
     width: 169px;
@@ -305,7 +306,7 @@ header .menu li:last-child a img{
 }
 .team__work-right__foto img{
     border-radius: 57px 0 0 0; 
-    max-width: calc(100% + 77px);
+    max-width: 100%;
     background: linear-gradient(198.73deg, rgba(0, 0, 0, 0.0001) 15.31%, rgba(0, 0, 0, 0.837986) 67.37%);
     height: 657px;
     object-fit: cover;
@@ -783,6 +784,7 @@ footer a.logo{
     line-height: 22px;
     letter-spacing: -0.38px;
     opacity: 0.6;
+    padding-left: 15px;
 }
 
 
@@ -842,6 +844,7 @@ footer a.logo{
     .section__filter {
         height: auto;
         padding-top: 70px;
+        padding-bottom: 10%;
     }
     .section__filter-choice hr{
         margin-left: 6%;
@@ -904,6 +907,8 @@ footer a.logo{
         margin-bottom: 9%;
         margin-left: 5%;
         margin-top: 60px;
+        width: 90%;
+        padding-right: 10%;
     }
     .team__work-right__foto img{
         width: 95%;
